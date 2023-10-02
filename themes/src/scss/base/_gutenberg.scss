@@ -1,0 +1,47 @@
+
+.has-background {
+  a:not(.btn):not(.btn-primary):not(.is-style-btn-primary):not(.btn-secondary):not(.is-style-btn-secondary) {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+}
+
+.wp-block-columns {
+  &.is-style-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .wp-block-column {
+    //margin-bottom: 1.5em;
+    > *:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+}
+
+.has-parallax {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.is-style-image-shadow img {
+  box-shadow: 21px 13px 25px -18px rgba(0, 0, 0, 0.37) !important;
+}
+
+@media (max-width: calc($sm - 1px) ) {
+  .team  {
+    text-align: center !important;
+    * {
+      text-align: center !important;
+    }
+  }
+}

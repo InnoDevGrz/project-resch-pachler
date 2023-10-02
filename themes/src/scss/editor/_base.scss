@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: $base-font-family;
+    background-color: $base-bg-color;
+    color: $base-color;
+    font-weight: $base-font-weight;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    color: $headline-color;
+}
+
+
+.editor-post-title__block,
+.editor-post-title__input {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h1 {
+    margin: .67em 0;
+    line-height: 1;
+    font-size: 2em;
+}
+
+h2:not(.post-title) {
+    font-size: 1.5em;
+    margin: 1.1em 0 .52em;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: .3em;
+}
+
+
+.h3,
+h3 {
+    font-size: 1.35em;
+    margin: .95em 0 .48em;
+    line-height: 1.2;
+}
+
+h4:not(.post-title) {
+    font-size: 1.2em;
+    margin: .95em 0 .48em;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 1.1em;
+    margin: .95em 0 .48em;
+    line-height: 1.2;
+}
+
+a {
+    color: $primary;
+    transition: color 250ms linear;
+
+    &:hover {
+        color: $secondary;
+    }
+
+    &:active {
+        color: $base-color;
+    }
+
+    &.more-link {
+        display: inline-block;
+    }
+}
+
+
+figure {
+    margin: 0;
+}
+
+
+ul.is-style-highlights {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.2em;
+        margin-bottom: .4em;
+
+        &:before {
+            @extend %icon;
+            content: $icon-arrow_right;
+            position: absolute;
+            top: .3em;
+            left: 0;
+        }
+    }
+}

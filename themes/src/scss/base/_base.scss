@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: $base-line-height;
+  scroll-behavior: smooth;
+  font-size: $base-font-size-desktop;
+
+  @media only screen and (max-width: $sm - 1px) {
+    font-size: $base-font-size-mobile;
+  }
+
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: $base-font-family;
+  background-color: $base-bg-color;
+  color: $base-color;
+  font-weight: $base-font-weight;
+  padding-top: $nav-height-mobile;
+  overflow-x: hidden;
+  position: relative;
+  @media (min-width: $breakpoint-nav) {
+    padding-top: $nav-height-desktop;
+  }
+
+
+}
+
+#content {
+  //overflow: hidden;
+  @media (min-width: $lg) {
+
+  }
+}
+
+
+.mobile-off {
+  display: none;
+  @media only screen and (min-width: $sm) {
+    display: block;
+  }
+}
+.tablet-off {
+  display: none;
+
+  @media only screen and (min-width: $md) {
+    display: block;
+  }
+}
+
+.desktop-off {
+  display: block;
+  @media only screen and (min-width: $breakpoint-nav) {
+    display: none;
+  }
+}
+

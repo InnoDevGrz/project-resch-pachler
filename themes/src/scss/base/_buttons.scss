@@ -1,0 +1,61 @@
+/*
+*
+*  Header-Slider Button s. scss/blocks/header
+*/
+
+@mixin button($background-color, $color, $border-color) {
+    //white-space: nowrap;
+    display: inline-block !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    padding: .8em 1em !important;
+    line-height: 1 !important;
+    margin-bottom: 1.1em !important;
+    margin-top: 1em !important;
+    color: $color !important;
+    background: $background-color !important;
+    border: 1px solid $border-color !important;
+    overflow: hidden !important;
+    transition: all 0.3s linear !important;
+    font-family: $base-font-family !important;
+    font-weight: $base-font-weight !important;
+    &:hover {
+        color: $background-color !important;
+        background-color: $color !important;
+    }
+    &:active {
+        color: $background-color !important;
+        background-color: $color !important;
+    }
+}
+
+
+
+
+
+// header-btn s. header-slider.scss
+.btn,
+.ff-btn,
+button,
+input[type="submit"],
+.sib-default-btn,
+button[type="submit"],
+.wp-block-button .wp-block-button__link {
+    @include button(#ffffff, $secondary, #ebebeb);
+}
+
+.is-style-btn-primary .wp-block-button__link,
+.btn-primary {
+    @include button(#ffffff, $primary, #ebebeb);
+}
+
+.is-style-btn-secondary .wp-block-button__link,
+.btn-secondary {
+    @include button(#ffffff, $secondary, #ebebeb);
+}
+
+
+

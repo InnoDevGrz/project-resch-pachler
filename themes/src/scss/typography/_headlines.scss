@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5 {
+  font-family: $headline-font-family;
+  font-weight: $headline-font-weight;
+  color: $headline-color;
+  line-height: 1.1;
+  margin-top: 1em;
+  margin-bottom: .3em;
+  position: relative;
+}
+$headline-font-size-mobile: .5em;
+$headline-font-size-desktop: $headline-font-size-mobile * 2;
+
+h1 {
+  font-size: $headline-font-size-mobile * 5;
+}
+
+h2:not(.post-title) {
+  font-size: $headline-font-size-mobile * 3.5;
+}
+
+h3 {
+  font-size: $headline-font-size-mobile * 2.5;
+}
+
+h4:not(.post-title) {
+  font-size: $headline-font-size-mobile 1.5;
+}
+
+h5 {
+  font-size: $headline-font-size-mobile * 1.2;
+}
+
+
+
+@media screen and (min-width: $sm) {
+
+  h1 {
+    font-size: $headline-font-size-desktop * 5;
+  }
+
+  h2:not(.post-title) {
+    font-size: $base-font-size-desktop * 3.5;
+  }
+
+  h3 {
+    font-size: $base-font-size-desktop * 2.5;
+  }
+
+  h4:not(.post-title) {
+    font-size: $base-font-size-desktop 1.5;
+  }
+
+  h5 {
+    font-size: $base-font-size-desktop * 1.2;
+  }
+
+}

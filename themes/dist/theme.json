@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "base-bg",
+          "color": "#ffffff",
+          "name": "Base BG"
+        },
+        {
+          "slug": "base",
+          "color": "#1F2128",
+          "name": "Base"
+        },
+        {
+          "slug": "border",
+          "color": "#0A0A0A",
+          "name": "Border"
+        },
+        {
+          "slug": "primary",
+          "color": "#EE1616",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#000000",
+          "name": "Secondary"
+        },
+        {
+          "slug": "third",
+          "color": "#6E0A0A",
+          "name": "Third"
+        },
+        {
+          "slug": "lighted",
+          "color": "#f4f4f4",
+          "name": "Lighted"
+        },
+        {
+          "slug": "darken",
+          "color": "#1d1d1d",
+          "name": "Darken"
+        }
+      ],
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "duotone": [],
+      "gradients": []
+    },
+    "custom": {},
+    "layout": {
+      "contentSize": "1000px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "margin": false,
+      "padding": false,
+      "units": [
+        "em"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "lineHeight": true,
+      "dropCap": false,
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.6rem",
+          "name": "small"
+        },
+        {
+          "slug": "medium-small",
+          "size": "0.8rem",
+          "name": "medium-small"
+        },
+        {
+          "slug": "normal",
+          "size": "1rem",
+          "name": "normal"
+        },
+        {
+          "slug": "medium",
+          "size": "1.2rem",
+          "name": "Medium"
+        },
+        {
+          "slug": "medium_large",
+          "size": "1.5rem",
+          "name": "Medium-Large"
+        },
+        {
+          "slug": "large",
+          "size": "2rem",
+          "name": "Large"
+        },
+        {
+          "slug": "xlarge",
+          "size": "3rem",
+          "name": "X-Large"
+        },
+        {
+          "slug": "xxlarge",
+          "size": "4rem",
+          "name": "X-Large"
+        },
+        {
+          "slug": "xxxlarge",
+          "size": "6rem",
+          "name": "X-Large"
+        }
+      ]
+    },
+    "blocks": {
+      "core/paragraph": {
+        "layout": {},
+        "spacing": {},
+        "typography": {}
+      },
+      "core/button": {
+        "border": {
+          "radius": false
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "padding": false
+        },
+        "layout": {}
+      }
+    }
+  }
+}

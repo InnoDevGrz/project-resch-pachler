@@ -1,0 +1,22 @@
+.image-slider {
+  font-family: $headline-font-family;
+  position: relative;
+  overflow: hidden;
+
+  .wrapper {
+    position: relative;
+
+
+
+    img {
+      max-width: unset;
+      width: 150%;
+      @media only screen and (min-width: $xs) {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+  }
+}

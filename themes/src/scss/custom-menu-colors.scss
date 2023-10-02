@@ -1,0 +1,651 @@
+@import "variables";
+
+.custom-menu-colors {
+
+  /* *** B G - C O L O R S ***  */
+  &.mobile-menu-bg-white {
+    background-color: #fff;
+
+    #primary-nav {
+      background-color: #fff;
+
+      .nav-area {
+        background-color: #fff;
+      }
+
+      .sub-menu {
+        background-color: #fff;
+      }
+
+    }
+
+  }
+
+  &.mobile-menu-bg-primary {
+    background-color: $primary;
+
+    #primary-nav {
+      background-color: $primary;
+
+      .nav-area {
+        background-color: $primary;
+      }
+
+      .sub-menu {
+        background-color: $primary;
+      }
+
+    }
+  }
+
+  &.mobile-menu-bg-secondary {
+    background-color: $secondary;
+
+    #primary-nav {
+      background-color: $secondary;
+
+      .nav-area {
+        background-color: $secondary;
+      }
+
+      .sub-menu, .sub-menu li {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  &.mobile-menu-bg-lighted {
+    background-color: $lighted;
+
+    #primary-nav {
+      background-color: $lighted;
+
+      .nav-area {
+        background-color: $lighted;
+      }
+
+      .sub-menu {
+        background-color: $lighted;
+      }
+    }
+  }
+
+  &.mobile-menu-bg-darken {
+    background-color: $darken;
+
+    #primary-nav {
+      background-color: $darken;
+
+      .nav-area {
+        background-color: $darken;
+      }
+
+      .sub-menu {
+        background-color: $darken;
+      }
+
+    }
+  }
+
+  /* *** C O L O R S ***  */
+  &.mobile-menu-color-base {
+    a, label, .sub-menu a {
+      color: $base-color;
+    }
+  }
+
+  &.mobile-menu-color-white {
+    a, label, .sub-menu a {
+      color: #fff;
+    }
+  }
+
+  &.mobile-menu-color-primary {
+    a, label, .sub-menu a {
+      color: $primary;
+    }
+  }
+
+  &.mobile-menu-color-secondary {
+    a, label, .sub-menu a {
+      color: $secondary;
+    }
+  }
+
+  &.mobile-menu-color-lighted {
+    a, label, .sub-menu a {
+      color: $lighted;
+    }
+  }
+
+  &.mobile-menu-color-darken {
+    a, label, .sub-menu a {
+      color: $darken;
+    }
+  }
+
+  &.mobile-menu-active-color-base {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: $base-color;
+    }
+  }
+
+  &.mobile-menu-active-color-white {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: #fff;
+    }
+  }
+
+  &.mobile-menu-active-color-primary {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: $primary;
+    }
+  }
+
+  &.mobile-menu-active-color-secondary {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: $secondary;
+    }
+  }
+
+  &.mobile-menu-active-color-lighted {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: $lighted;
+    }
+  }
+
+  &.mobile-menu-active-color-darken {
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      color: $darken;
+    }
+  }
+
+}
+
+.custom-menu-colors {
+
+  /* *** B G - C O L O R S ***  */
+  @media screen and (min-width: $breakpoint-nav) {
+
+    &.desktop-menu-bg-transparent {
+      background-color: transparent;
+
+      #primary-nav {
+        background-color: transparent;
+
+        .nav-area {
+          background-color: transparent;
+        }
+      }
+    }
+    &.desktop-menu-bg-transparent ~ main {
+      margin-top: - $nav-height-desktop
+    }
+
+    &.desktop-menu-bg-white {
+      background-color: #fff;
+
+      #primary-nav {
+        background-color: #fff;
+
+        .nav-area {
+          background-color: #fff;
+        }
+      }
+    }
+    &.desktop-menu-bg-primary {
+      background-color: $primary;
+
+      #primary-nav {
+        background-color: $primary;
+
+        .nav-area {
+          background-color: $primary;
+        }
+      }
+    }
+    &.desktop-menu-bg-secondary {
+      background-color: $secondary;
+
+      #primary-nav {
+        background-color: $secondary;
+
+        .nav-area {
+          background-color: $secondary;
+        }
+      }
+    }
+    &.desktop-menu-bg-lighted {
+      background-color: $lighted;
+
+      #primary-nav {
+        background-color: $lighted;
+
+        .nav-area {
+          background-color: $lighted;
+        }
+      }
+    }
+    &.desktop-menu-bg-darken {
+      background-color: $darken;
+
+      #primary-nav {
+        background-color: $darken;
+
+        .nav-area {
+          background-color: $darken;
+        }
+      }
+    }
+
+    &.desktop-submenu-bg-transparent {
+      .sub-menu, .sub-menu li {
+        background-color: transparent !important;;
+
+        &:before {
+          border-color: transparent transparent transparent transparent;
+        }
+      }
+    }
+    &.desktop-submenu-bg-white {
+      .sub-menu, .sub-menu li {
+        background-color: #fff !important;
+
+        &:before {
+          border-color: transparent transparent #fff transparent;
+        }
+
+      }
+    }
+    &.desktop-submenu-bg-primary {
+      .sub-menu, .sub-menu li {
+        background-color: $primary !important;
+
+        &:before {
+          border-color: transparent transparent $primary transparent;
+        }
+      }
+
+    }
+    &.desktop-submenu-bg-secondary {
+      .sub-menu, .sub-menu li {
+        background-color: $secondary;
+
+        &:before {
+          border-color: transparent transparent $secondary transparent;
+        }
+      }
+    }
+    &.desktop-submenu-bg-lighted {
+      .sub-menu, .sub-menu li {
+        background-color: $lighted !important;
+
+        &:before {
+          border-color: transparent transparent $lighted transparent;
+        }
+      }
+    }
+    &.desktop-submenu-bg-darken {
+      .sub-menu, .sub-menu li {
+        background-color: $darken;
+
+        &:before {
+          border-color: transparent transparent $darken transparent;
+        }
+      }
+    }
+
+
+    &.desktop-submenu-hover-bg-transparent {
+      .sub-menu {
+        .sub-menu li:hover,
+        .sub-menu a:hover,
+        .sub-menu label:hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+    &.desktop-submenu-hover-bg-white {
+      .sub-menu li:hover,
+      .sub-menu a:hover,
+      .sub-menu label:hover {
+        background-color: #fff !important;
+      }
+    }
+    &.desktop-submenu-hover-bg-primary {
+      .sub-menu li:hover,
+      .sub-menu a:hover,
+      .sub-menu label:hover {
+        background-color: $primary !important;
+      }
+    }
+    &.desktop-submenu-hover-bg-secondary {
+      .sub-menu li:hover,
+      .sub-menu a:hover,
+      .sub-menu label:hover {
+        background-color: $secondary !important;
+      }
+    }
+    &.desktop-submenu-hover-bg-lighted {
+      .sub-menu li:hover,
+      .sub-menu a:hover,
+      .sub-menu label:hover {
+        background-color: $lighted !important;
+      }
+    }
+    &.desktop-submenu-hover-bg-darken {
+      .sub-menu li:hover,
+      .sub-menu a:hover,
+      .sub-menu label:hover {
+        background-color: $darken !important;
+      }
+    }
+
+
+  }
+
+  /* *** C O L O R S ***  */
+  @media screen and (min-width: $breakpoint-nav) {
+    &.desktop-menu-color-base {
+      a, label {
+        color: $base-color;
+      }
+    }
+    &.desktop-menu-color-white {
+      a, label {
+        color: #fff;
+      }
+    }
+    &.desktop-menu-color-primary {
+      a, label {
+        color: $primary;
+      }
+    }
+    &.desktop-menu-color-secondary {
+      a, label {
+        color: $secondary;
+      }
+    }
+    &.desktop-menu-color-lighted {
+      a, label {
+        color: $lighted;
+      }
+    }
+    &.desktop-menu-color-darken {
+      a, label {
+        color: $darken;
+      }
+    }
+
+    &.desktop-menu-hover-color-base {
+      a:hover, label:hover {
+        color: $base-color;
+
+        &:after {
+          background-color: $base-color;
+        }
+
+
+      }
+    }
+    &.desktop-menu-hover-color-white {
+      a:hover, label:hover {
+        color: #fff;
+
+        &:after {
+          background-color: #fff;
+        }
+
+
+      }
+    }
+    &.desktop-menu-hover-color-primary {
+      a:hover, label:hover {
+        color: $primary;
+
+        &:after {
+          background-color: $primary;
+        }
+
+
+      }
+    }
+    &.desktop-menu-hover-color-secondary {
+      a:hover, label:hover {
+        color: $secondary;
+
+        &:after {
+          background-color: $secondary;
+        }
+
+
+      }
+    }
+    &.desktop-menu-hover-color-lighted {
+      a:hover, label:hover {
+        color: $lighted;
+
+        &:after {
+          background-color: $lighted;
+        }
+
+
+      }
+    }
+    &.desktop-menu-hover-color-darken {
+      a:hover, label:hover {
+        color: $darken;
+
+        &:after {
+          background-color: $darken;
+        }
+
+
+      }
+    }
+
+    &.desktop-menu-active-color-base {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: $base-color;
+      }
+    }
+    &.desktop-menu-active-color-white {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: white;
+      }
+    }
+    &.desktop-menu-active-color-primary {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: $primary;
+      }
+    }
+    &.desktop-menu-active-color-secondary {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: $secondary;
+      }
+    }
+    &.desktop-menu-active-color-lighted {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: $lighted;
+      }
+    }
+    &.desktop-menu-active-color-darken {
+      .current-menu-item > a,
+      .current-menu-parent > a {
+        color: $darken;
+      }
+    }
+
+    &.desktop-submenu-color-base {
+      .sub-menu {
+        a, label {
+          color: $base-color;
+        }
+      }
+    }
+    &.desktop-submenu-color-white {
+      .sub-menu {
+        a, label {
+          color: #fff;
+        }
+      }
+    }
+    &.desktop-submenu-color-primary {
+      .sub-menu {
+        a, label {
+          color: $primary;
+        }
+      }
+    }
+    &.desktop-submenu-color-secondary {
+      .sub-menu {
+        a, label {
+          color: $secondary;
+        }
+      }
+    }
+    &.desktop-submenu-color-lighted {
+      .sub-menu {
+        a, label {
+          color: $lighted;
+        }
+      }
+    }
+    &.desktop-submenu-color-darken {
+      .sub-menu {
+        a, label {
+          color: $darken;
+        }
+      }
+    }
+
+    &.desktop-submenu-hover-color-base {
+      .sub-menu {
+        a:hover, label:hover {
+          color: $base-color;
+        }
+      }
+    }
+    &.desktop-submenu-hover-color-white {
+      .sub-menu {
+        a:hover, label:hover {
+          color: #fff;
+        }
+      }
+    }
+    &.desktop-submenu-hover-color-primary {
+      .sub-menu {
+        a:hover, label:hover {
+          color: $primary;
+        }
+      }
+    }
+    &.desktop-submenu-hover-color-secondary {
+      .sub-menu {
+        a:hover, label:hover {
+          color: $secondary;
+        }
+      }
+    }
+    &.desktop-submenu-hover-color-lighted {
+      .sub-menu {
+        a:hover, label:hover {
+          color: $lighted;
+        }
+      }
+    }
+    &.desktop-submenu-hover-color-darken {
+      .sub-menu {
+        a:hover, label:hover {
+          color: $darken;
+        }
+      }
+    }
+
+    &.desktop-submenu-active-color-base {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: $base-color;
+        }
+      }
+    }
+    &.desktop-submenu-active-color-white {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: #fff;
+        }
+      }
+    }
+    &.desktop-submenu-active-color-primary {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: $primary;
+        }
+      }
+    }
+    &.desktop-submenu-active-color-secondary {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: $secondary;
+        }
+      }
+    }
+    &.desktop-submenu-active-color-lighted {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: $lighted;
+        }
+      }
+    }
+    &.desktop-submenu-active-color-darken {
+      .sub-menu {
+        .current-menu-item > a,
+        .current-menu-parent > a {
+          color: $darken;
+        }
+      }
+    }
+
+  }
+}
+
+#navbar.custom-menu-colors.desktop-menu-bg-transparent.scroll-up.recolor {
+  @media screen and (min-width: $breakpoint-nav) {
+    background-color: #fff;
+
+    #primary-nav {
+
+      li a {
+        color: $base-color;
+        &:after{
+          background-color: $base-color;
+        }
+      }
+      .current-menu-parent > a,
+      .current-menu-item > a{
+        color: $primary;
+      }
+
+    }
+
+  }
+
+
+}
+

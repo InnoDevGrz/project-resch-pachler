@@ -1,0 +1,75 @@
+ul{
+  li::marker{
+    color: $primary;
+  }
+}
+
+
+
+ul.is-style-highlights {
+
+  list-style-type: none;
+  padding: 0;
+  padding-top: 1em;
+
+
+  li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: .4em;
+
+    &:before {
+      @extend %icon;
+      content: $icon-arrow_right;
+      color: $third;
+      position: absolute;
+      top: .22em;
+      left: 0;
+    }
+  }
+}
+
+
+/*** list triangle sign***/
+%triangle{
+  padding-top: 1em;
+  list-style-type: none;
+
+
+  > li {
+    position: relative;
+    padding-left: 15px;
+    margin-top: .8em;
+    font-family: $headline-font-family;
+    color: $base-color;
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0.28em;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 6px;
+      //border-color: transparent transparent transparent #383838
+    }
+  }
+}
+.is-style-triangle-primary {
+  @extend %triangle;
+  li:before{
+    border-color: transparent transparent transparent $primary;
+  }
+}
+
+.is-style-triangle-secondary {
+  @extend %triangle;
+  li:before{
+    border-color: transparent transparent transparent $secondary;
+  }
+}

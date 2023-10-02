@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  font-family: $base-font-family;
+  background-color: $base-bg-color;
+  color: $base-color;
+  font-weight: $base-font-weight;
+}
+
+
+b, strong {
+  font-weight: 600;
+}
+
+.is-style-base{
+  text-transform: none !important;
+  font-weight: $base-font-weight !important;
+  color: $base-color;
+  font-family: $base-font-family !important;
+  font-size: $base-font-size-mobile;
+  letter-spacing: unset;
+  @media only screen and (min-width: $sm) {
+    font-size: $base-font-size-desktop;
+  }
+}

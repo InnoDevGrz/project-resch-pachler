@@ -1,0 +1,14 @@
+
+.wp-block {
+
+
+}
+
+.block-teaser,
+.block-worldwide {
+    .wrapper {
+        padding-right: $container-padding-desktop;
+        padding-left: $container-padding-desktop;
+        max-width: $container-width-desktop;
+    }
+}

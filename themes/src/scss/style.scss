@@ -1,0 +1,65 @@
+/*!
+Theme Name: Horizon
+Description: Individual WordPress-Theme; ACF-PRO & ACF Crop Image needed. Featuring: Contact-Page, Header-Slider, Image-Slider, Text-Slider, Justified-Gallery-block, Justified-Gallery-Footer CPT Events sortable by date, CPT Referencdes, Imagebox, .
+Author: Innoside Web Solutions, Thomas Schreiber
+Author Uri: https://innoside.at/
+Theme Uri: https://innoside.at/
+Text Domain: ize
+Version: 21.0
+Requires at least: 6.0
+Requires PHP: > 8.0
+Text-Domain: ize
+ */
+
+
+@import "variables";
+
+@import "base/base";
+@import "typography/base-typography";
+@import "typography/colors";
+@import "typography/fonts";
+@import "typography/flaticon";
+@import "typography/headlines";
+@import "typography/icons";
+@import "typography/links";
+@import "typography/lists";
+
+@import "nav/navigation";
+
+@import "base/animate";
+@import "base/layout";
+@import "base/buttons";
+@import "base/forms";
+@import "base/footer";
+@import "base/gutenberg";
+@import "base/has-parallax";
+@import "base/images";
+@import "base/nav-slide";
+@import "base/screen-reader";
+@import "base/scroll-top";
+@import "base/sidebar-menu";
+@import "base/custom-post-types";
+@import "base/partner-slider";
+@import "base/gallery-accordion";
+
+
+
+
+/* posts */
+@import "posts/single";
+@import "posts/grid";
+@import "posts/navigation";
+
+/* acf-blocks */
+@import "blocks/header-slider";
+@import "blocks/image-slider";
+@import "blocks/text-slider";
+@import "blocks/image-box";
+@import "blocks/image-teaser";
+
+/* templates */
+@import "templates/contact-page";
+@import "templates/page-has-contact-form";
+@import "templates/page-has-parallax-end";
+
+

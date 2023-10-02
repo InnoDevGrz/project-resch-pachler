@@ -1,0 +1,40 @@
+@import "variables";
+
+$font-path: "../fonts";
+
+
+@import "typography/base-typography";
+@import "typography/fonts";
+@import "typography/headlines";
+@import "typography/icons";
+@import "typography/links";
+@import "typography/lists";
+
+
+@import "base/buttons";
+//@import "base/layout";
+@import "base/gutenberg";
+
+@import "editor/base";
+@import "editor/wp-block";
+@import "editor/splide";
+
+@import "blocks/header-slider";
+@import "blocks/image-box";
+@import "blocks/image-teaser";
+@import "posts/grid";
+
+
+
+// justified gallery block
+ .wp-block-acf-tsc-block-justified-gallery {
+      .attachment-full.size-full {
+        max-width: 20% !important;
+        width: 20% !important;
+        height: auto;
+      }
+
+}
+.acf-block-preview .cube side.front{
+  min-height: 300px !important;
+}
