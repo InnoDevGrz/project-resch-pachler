@@ -95,9 +95,11 @@
     }
 
     @media (min-width: $breakpoint-nav) {
-      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
       padding: 0;
-      margin-top: 20px;
+      margin-top: 45px;
     }
 
     a {
@@ -119,7 +121,6 @@
         display: inline-block;
         border: none;
         background-color: transparent;
-        margin-right: 1.5em;
         &:last-of-type {
           margin-right: 0;
         }
@@ -165,44 +166,38 @@
         letter-spacing: $nav-font-letter-spacing;
         color: $nav-color;
         position: relative;
+        text-transform: uppercase;
         @media only screen and (min-width: $breakpoint-nav) {
           color: $nav-color-desktop;
-          &:after {
-            content: "";
-            position: absolute;
-            top: 50px;
-            left: 50%;
-            width: 0;
-            height: 1px;
-            background-color: transparent;
-            transition: top 0.22s linear, width 0.42s ease-in, left 0.4s ease-in;
-          }
+          height: 50px;
+          line-height: 50px;
+          font-size: $desktop-nav-font-size;
         }
-
 
         &:hover {
-          color: $nav-active-color;
+          opacity: 0.7;
           @media only screen and (min-width: $breakpoint-nav) {
-            color: $nav-color-desktop;
-            &:after {
-              left: 0;
-              top: 10px;
-              //transition: width 0.35s ease-in, left 0.35s ease-in;
-              width: 100%;
-              background-color: $nav-color;
 
-            }
           }
         }
 
 
+        img, svg{
+          display: none;
+         @media screen and (min-width: $breakpoint-nav) {
+           height: 40px;
+           width: 40px;
+           display: block;
+           position: absolute;
+           top: -30px;
+           left: calc(50% - 22px);
+           text-align: center;
 
-        @media (min-width: $breakpoint-nav) {
-          height: 58px;
-          line-height: 58px;
-          font-size: $desktop-nav-font-size;
+         }
 
         }
+
+
 
       }
 

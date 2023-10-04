@@ -1,9 +1,9 @@
-$base-font-family: 'Catamaran', sans-serif;
+$base-font-family: 'Roboto', sans-serif;
 
 $base-font-size-desktop: 18px;
 $base-font-size-mobile: $base-font-size-desktop * 1.05;
 $base-line-height: 1.45;
-$base-font-weight: 200;
+$base-font-weight: 300;
 
 $primary: var(--wp--preset--color--primary);
 $secondary: var(--wp--preset--color--secondary);
@@ -13,22 +13,23 @@ $lighted: var(--wp--preset--color--lighted);
 $darken: var(--wp--preset--color--darken);
 
 $base-bg-color: var(--wp--preset--color--base-bg);
+//$base-bg-color: $primary;
 $base-color: var(--wp--preset--color--base);
 $base-border-color: var(--wp--preset--color--border);
 
 
 // N A V *********************
 $nav-height-mobile: 60px;
-$nav-height-desktop: 80px;
+$nav-height-desktop: 120px;
 
-$nav-font-family: 'Catamaran', sans-serif;
-$nav-font-weight: 200;
-$nav-mobile-font-weight: 600;
-$nav-desktop-font-weight: 200;
-$nav-font-letter-spacing: 1.2px;
+$nav-font-family: 'Heebo', sans-serif;
+$nav-font-weight: 700;
+$nav-mobile-font-weight: 700;
+$nav-desktop-font-weight: 700;
+$nav-font-letter-spacing: 2px;
 $mobile-nav-font-size: 18px;
-$desktop-nav-font-size: 19px;
-$desktop-subnav-font-size: 16px;
+$desktop-nav-font-size: 13px;
+$desktop-subnav-font-size: 15px;
 
 $nav-bg-color: #fff;
 $nav-bg-color-desktop: $nav-bg-color;
@@ -53,26 +54,18 @@ $post-meta-font-size: 0.9rem;
 $post-item-max-width: 350px;
 
 
-$headline-font-family: 'Catamaran', serif;
-$headline-font-weight: 400;
+$headline-font-family: 'Heebo', serif;
+$headline-font-weight: 900;
 $headline-color: $base-color;
 
 $widgets-bg-color: $lighted;
 $widgets-color: $base-color;
 
-$footer-font-family: 'Catamaran', sans-serif;
-$footer-font-weight: 200;
+$footer-font-family: 'Roboto', sans-serif;
+$footer-font-weight: 400;
 $footer-bg-color: #fff;
 $footer-color: $base-color;
 $footer-nav-color: $base-color;
-
-
-/*
-$danger: #ff4444;
-$warning: #ffbb33;
-$success: #00c851;
-$info: #33b5e5;
-*/
 
 $xxs: 420px;
 $xs: 600px;
@@ -89,8 +82,6 @@ $container-padding-mobile: 20px;
 $container-padding-desktop: 50px;
 $container-width-mobile: (2 * $container-padding-mobile + $content-max-width);
 $container-width-desktop: (2 * $container-padding-desktop + $content-max-width);
-
-
 
 $font-path: "assets/fonts" !default;
 

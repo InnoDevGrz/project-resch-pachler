@@ -27,6 +27,6 @@ add_filter('excerpt_more', function ($more) {
 function wpdocs_remove_menus(){
     remove_menu_page( 'edit.php' ); //Posts
 }
-add_action( 'admin_menu', 'wpdocs_remove_menus' );
+//add_action( 'admin_menu', 'wpdocs_remove_menus' );
 
 

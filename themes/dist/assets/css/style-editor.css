@@ -1,26 +1,20 @@
-/*
-$danger: #ff4444;
-$warning: #ffbb33;
-$success: #00c851;
-$info: #33b5e5;
-*/
 body {
   margin: 0;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 b, strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .is-style-base {
   text-transform: none !important;
-  font-weight: 200 !important;
+  font-weight: 300 !important;
   color: var(--wp--preset--color--base);
-  font-family: "Catamaran", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 18.9px;
   letter-spacing: unset;
 }
@@ -31,29 +25,43 @@ b, strong {
 }
 
 @font-face {
-  font-family: "Catamaran";
-  src: url("../fonts/catamaran/catamaran-v18-latin-200.woff2") format("woff2"), url("../fonts/subset-catamaran-v18-latin-200.woff") format("woff");
-  font-weight: 200;
+  font-family: "Heebo";
+  src: url("../fonts/heebo/heebo-v22-latin-700.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Catamaran";
-  src: url("../fonts/catamaran/catamaran-v18-latin-regular.woff2") format("woff2"), url("../fonts/subset-catamaran-v18-latin-regular.woff") format("woff");
-  font-weight: 400;
+  font-family: "Heebo";
+  src: url("../fonts/heebo/heebo-v22-latin-800.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Catamaran";
-  src: url("../fonts/catamaran/catamaran-v18-latin-600.woff2") format("woff2"), url("../fonts/subset-catamaran-v18-latin-600.woff") format("woff");
-  font-weight: 600;
+  font-family: "Heebo";
+  src: url("../fonts/heebo/heebo-v22-latin-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/roboto-v30-latin-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/roboto-v30-latin-700.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 h1, h2, h3, h4, h5 {
-  font-family: "Catamaran", serif;
-  font-weight: 400;
+  font-family: "Heebo", serif;
+  font-weight: 900;
   color: var(--wp--preset--color--base);
   line-height: 1.1;
   margin-top: 1em;
@@ -246,7 +254,7 @@ ul.is-style-highlights li:before {
   position: relative;
   padding-left: 15px;
   margin-top: 0.8em;
-  font-family: "Catamaran", serif;
+  font-family: "Heebo", serif;
   color: var(--wp--preset--color--base);
 }
 .is-style-triangle-secondary > li:first-child, .is-style-triangle-primary > li:first-child {
@@ -299,8 +307,8 @@ button[type=submit],
   overflow: hidden !important;
   -webkit-transition: all 0.3s linear !important;
   transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
 }
 .btn:hover,
 .ff-btn:hover,
@@ -341,8 +349,8 @@ button[type=submit]:active,
   overflow: hidden !important;
   -webkit-transition: all 0.3s linear !important;
   transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
 }
 .is-style-btn-primary .wp-block-button__link:hover,
 .btn-primary:hover {
@@ -373,8 +381,8 @@ button[type=submit]:active,
   overflow: hidden !important;
   -webkit-transition: all 0.3s linear !important;
   transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
 }
 .is-style-btn-secondary .wp-block-button__link:hover,
 .btn-secondary:hover {
@@ -426,10 +434,10 @@ button[type=submit]:active,
 }
 body {
   margin: 0;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
@@ -706,8 +714,8 @@ ul.is-style-highlights li:before {
   overflow: hidden !important;
   -webkit-transition: all 0.3s linear !important;
   transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
   -ms-flex-item-align: center;
       align-self: center;
   z-index: 10;

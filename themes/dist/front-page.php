@@ -3,7 +3,6 @@
         <?php include(locate_template('template-parts/content.php')); ?>
     </main>
     <aside>
-        <?php include(locate_template('template-parts/partner-carousel.php')); ?>
 
     </aside>
 

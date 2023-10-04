@@ -1,1 +1,0 @@
-<h2 class="no-posts"><?php _e('Keine Referenzen vorhanden', 'ize'); ?></h2>
