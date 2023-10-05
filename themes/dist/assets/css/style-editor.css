@@ -62,7 +62,7 @@ b, strong {
 h1, h2, h3, h4, h5 {
   font-family: "Heebo", serif;
   font-weight: 900;
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--primary);
   line-height: 1.1;
   margin-top: 1em;
   margin-bottom: 0.3em;
@@ -442,7 +442,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--primary);
 }
 
 .editor-post-title__block,
@@ -731,6 +731,21 @@ ul.is-style-highlights li:before {
 }
 .block-header-slider .wrapper .container .inner .header-btn:hover, .block-header-slider .wrapper .container .inner .header-btn:active {
   color: var(--wp--preset--color--secondary) !important;
+}
+@media screen and (min-width: 768px) {
+  .block-header-slider .hs-teaser {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.block-header-slider .hs-teaser .hs-teaser-item {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .block-header-slider .hs-teaser .hs-teaser-item {
+    padding: 1.5rem;
+  }
 }
 
 .cube {

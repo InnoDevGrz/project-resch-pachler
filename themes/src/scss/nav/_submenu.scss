@@ -1,5 +1,4 @@
-
-> .sub-menu {
+ > .sub-menu {
   display: none;
   padding-bottom: 1em;
   background-color: $subnav-mobile-bg-color;
@@ -14,7 +13,7 @@
     padding: 2rem;
     left: 0;
     right: 0;
-    top: 140px !important;
+    top: $nav-height-desktop;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
@@ -97,6 +96,7 @@
 
 
 }
+
 
 
 input[type="checkbox"] {

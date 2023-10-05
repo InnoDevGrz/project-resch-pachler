@@ -3,10 +3,6 @@
   z-index: 2;
 
 
-
-
-
-
   .splide__track {
     overflow: visible !important;
   }
@@ -152,6 +148,17 @@
 
   }
 
+  .hs-teaser{
+    @media screen and (min-width: $sm) {
+      display: flex;
+    }
+    .hs-teaser-item{
+      padding: 1rem;
+      @media screen and (min-width: $sm) {
+        padding: 1.5rem;
+      }
+    }
+  }
 
 }
 

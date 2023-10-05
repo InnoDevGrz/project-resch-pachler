@@ -15,10 +15,12 @@ class tsc__HeaderSlider
 {
 
     protected $header_slider_data = array();
+    protected $header_slider_teaser = array();
 
     public function __construct()
     {
         $this->set_headerslider_data();
+        $this->set_headerslider_teaser();
     }
 
     static function init()
@@ -234,9 +236,16 @@ class tsc__HeaderSlider
     protected function set_headerslider_data(){
         $this->header_slider_data = get_field('block_headerslider');
     }
+    protected function set_headerslider_teaser(){
+        $this->header_slider_teaser = get_field('block_headerslider_teaser');
+    }
+
 
     public function get_headerslider_data(){
         return $this->header_slider_data;
+    }
+    public function get_headerslider_teaser(){
+        return $this->header_slider_teaser;
     }
 
     public function get_headline($header_slide)
@@ -264,7 +273,6 @@ class tsc__HeaderSlider
 
 
     }
-
 
     public function get_button($header_slide){
         $html = "";

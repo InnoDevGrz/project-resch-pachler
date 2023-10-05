@@ -1,0 +1,24 @@
+.admin-bar {
+
+  #wpadminbar {
+    display: none;
+    @media only screen and (min-width: 783px) {
+      display: block;
+
+
+    }
+  }
+
+  @media screen and (min-width: 783px) {
+    #navbar {
+      top: 32px !important;
+
+      #primary-nav > .nav-menu li > .sub-menu {
+        top: calc($nav-height-desktop + 32px) !important;
+
+      }
+    }
+  }
+
+
+}

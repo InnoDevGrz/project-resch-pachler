@@ -11,7 +11,7 @@ if (!empty($block['align'])) $class_name .= ' align' . $block['align'];
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
-                     <?php foreach ($headerslider->get_headerslider_data() as $header_slide) : ?>
+                    <?php foreach ($headerslider->get_headerslider_data() as $header_slide) : ?>
                         <li class="splide__slide">
                             <div class="wrapper">
                                 <div class="container">
@@ -30,10 +30,23 @@ if (!empty($block['align'])) $class_name .= ' align' . $block['align'];
                 </ul>
             </div>
         </div>
+
         <?php
-        wp_enqueue_style('slider-css');
-        wp_enqueue_script('slider-js');
+        $teasers = $headerslider->get_headerslider_teaser();
         ?>
+
+        <?php if ($teasers): ?>
+        <div class="hs-teaser">
+            <?php foreach ($teasers as $teaser): ?>
+                <a class="hs-teaser-item" href="<?= $teaser['link']; ?>"><?= $teaser['teaser_content']; ?></a>
+            <?php endforeach; ?>
+        </div>
+            <?php endif; ?>
+
+            <?php
+            wp_enqueue_style('slider-css');
+            wp_enqueue_script('slider-js');
+            ?>
     </header>
 <?php if (is_admin()) : ?>
     <h3 class="empty-block"><?php esc_attr_e('Headerslider-Block bearbeiten &raquo;', 'ize'); ?></h3>
