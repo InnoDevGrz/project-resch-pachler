@@ -514,7 +514,8 @@ ul.is-style-highlights li:before {
 @media (min-width: 1200px) {
   #navbar .brand a img,
   #navbar .brand a svg {
-    height: 115px !important;
+    margin-top: 15px;
+    height: 90px !important;
   }
 }
 #navbar .menu-brand {
@@ -524,7 +525,7 @@ ul.is-style-highlights li:before {
   #navbar .menu-brand {
     display: block;
   }
-  #navbar .menu-brand img {
+  #navbar .menu-brand img, #navbar .menu-brand svg {
     height: 100px;
     width: auto;
   }
@@ -720,8 +721,8 @@ ul.is-style-highlights li:before {
 #primary-nav {
   position: fixed;
   top: 60px;
-  width: 75%;
-  left: -75%;
+  width: 85%;
+  left: -85%;
   height: calc(99.9vh - 60px);
   overflow-y: auto;
   background-color: #fff;
@@ -891,17 +892,16 @@ ul.is-style-highlights li:before {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--wp--preset--color--base);
   position: relative;
-  text-transform: uppercase;
 }
 @media only screen and (min-width: 1200px) {
   #primary-nav .nav-menu > li > a {
     color: var(--wp--preset--color--base);
     height: 50px;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 #primary-nav .nav-menu > li > a:hover {
@@ -942,16 +942,18 @@ ul.is-style-highlights li:before {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    top: 80px;
     padding: 2rem;
     left: 0;
     right: 0;
+    top: 140px !important;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
     background-color: #fff;
     -webkit-transition: all 3s;
     transition: all 3s;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
 #primary-nav .nav-menu > li > .sub-menu li {
@@ -975,7 +977,12 @@ ul.is-style-highlights li:before {
   font-size: 15px;
   color: var(--wp--preset--color--base);
 }
-#primary-nav .nav-menu > li > .sub-menu a img {
+@media screen and (min-width: 1200px) {
+  #primary-nav .nav-menu > li > .sub-menu a {
+    font-size: 15px;
+  }
+}
+#primary-nav .nav-menu > li > .sub-menu a img, #primary-nav .nav-menu > li > .sub-menu a svg {
   display: none;
 }
 #primary-nav .nav-menu > li > .sub-menu a:hover {
@@ -983,8 +990,8 @@ ul.is-style-highlights li:before {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#primary-nav .nav-menu > li > .sub-menu a:hover img {
-  opacity: 0.8;
+#primary-nav .nav-menu > li > .sub-menu a:hover img, #primary-nav .nav-menu > li > .sub-menu a:hover svg {
+  opacity: 0.7;
 }
 @media only screen and (min-width: 1200px) {
   #primary-nav .nav-menu > li > .sub-menu a {
@@ -1003,12 +1010,14 @@ ul.is-style-highlights li:before {
             align-items: center;
     font-weight: 300 !important;
   }
-  #primary-nav .nav-menu > li > .sub-menu a img {
+  #primary-nav .nav-menu > li > .sub-menu a img, #primary-nav .nav-menu > li > .sub-menu a svg {
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    width: 65px;
+    height: auto;
   }
-  #primary-nav .nav-menu > li > .sub-menu a img:hover {
+  #primary-nav .nav-menu > li > .sub-menu a img:hover, #primary-nav .nav-menu > li > .sub-menu a svg:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }

@@ -12,7 +12,8 @@
       max-width: none;
       height: $nav-height-mobile - 5px;
       @media (min-width: $breakpoint-nav) {
-        height: $nav-height-desktop - 5px !important;
+        margin-top: 15px;
+        height: $nav-height-desktop - 30px !important;
       }
     }
 
@@ -25,7 +26,7 @@
   display: none;
   @media screen and (min-width: $breakpoint-nav) {
     display: block;
-    img{
+    img, svg{
       height: 100px;
       width: auto;
     }

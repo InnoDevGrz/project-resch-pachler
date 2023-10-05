@@ -11,15 +11,16 @@
     flex-direction: row;
     position: fixed;
     justify-content: space-evenly;
-    top: 80px;
     padding: 2rem;
     left: 0;
     right: 0;
+    top: 140px !important;
     z-index: 1;
     opacity: 0;
     pointer-events: none;
     background-color: $subnav-desktop-bg-color;
     transition: all 3s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
 
   li {
@@ -44,18 +45,24 @@
   a {
     line-height: 1.2;
     padding: .8em 0 .8em .7em;
-    font-size: $desktop-subnav-font-size;
+    font-size: $mobile-subnav-font-size;
+    @media screen and (min-width: $breakpoint-nav) {
+      font-size: $desktop-subnav-font-size;
+    }
+
     color: $subnav-mobile-color;
 
-    img {
+    img, svg {
       display: none;
+
     }
 
     &:hover {
       color: $subnav-active-color;
       transition: all 0.3s ease-in-out;
-      img {
-        opacity: 0.8;
+      img, svg {
+
+        opacity: 0.7;
       }
     }
 
@@ -69,9 +76,11 @@
       align-items: center;
       font-weight: 300 !important;
 
-      img {
+      img, svg {
         display: block;
         transition: all 0.3s ease-in-out;
+        width: 65px;
+        height: auto;
         &:hover{
           transform: scale(1.05);
         }
