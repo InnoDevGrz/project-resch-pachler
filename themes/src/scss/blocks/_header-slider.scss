@@ -11,6 +11,7 @@
     position: relative;
     max-height: 75vh;
     overflow: hidden;
+
     &:before {
       position: absolute;
       content: "";
@@ -52,10 +53,12 @@
       justify-content: center;
       align-items: center;
       @media only screen and (min-width: $md) {
-        align-items: flex-end;
+        align-items: center;
+        justify-content: flex-start;
       }
       max-height: 75vh;
       overflow: hidden;
+
       .inner {
         position: absolute;
         display: flex;
@@ -80,7 +83,7 @@
 
         .title {
           color: #fff;
-          font-weight: 200;
+          font-weight: 900;
           font-size: 1.5em;
           margin: 0 !important;
           padding: 0 !important;
@@ -134,9 +137,14 @@
           align-self: center;
           z-index: 10;
           padding: .6em 1em !important;
+
+          @media screen and (min-width: $sm) {
+            align-self: unset;
+          }
+
           &:hover,
-          &:active{
-            color: $secondary!important;
+          &:active {
+            color: $secondary !important;
           }
 
 
@@ -148,15 +156,68 @@
 
   }
 
-  .hs-teaser{
+  .hs-teaser {
+    padding-right: $container-padding-mobile;
+    padding-left: $container-padding-mobile;
+    max-width: $container-width-mobile;
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: $sm) {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      right: 0;
+      width: 100%;
       display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding-right: $container-padding-desktop;
+      padding-left: $container-padding-desktop;
+      max-width: $container-width-desktop;
+      z-index: 1;
     }
-    .hs-teaser-item{
+
+    .hs-teaser-item {
+      box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      flex: 1;
       padding: 1rem;
+      transition: all 0.4s ease-in-out;
+
       @media screen and (min-width: $sm) {
         padding: 1.5rem;
+        position: relative;
       }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $secondary;
+        top: calc(100% - 3px);
+        left: 0;
+        right: 0;
+        transition: all 0.4s ease-in-out;
+      }
+
+      &:hover {
+        box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.08);
+        &:after{
+        width: 25%;
+        }
+      }
+
+
+      h2, h3 {
+        font-size: $headline-font-size-desktop * 1.25 !important;
+      }
+
+      a, p {
+        color: $base-color !important;
+      }
+
+
     }
   }
 

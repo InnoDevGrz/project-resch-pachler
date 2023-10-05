@@ -17,8 +17,8 @@ if (!empty($block['align'])) $class_name .= ' align' . $block['align'];
                                 <div class="container">
                                     <div class="inner">
                                         <?php
-                                        echo $headerslider->get_subheadline($header_slide);
                                         echo $headerslider->get_headline($header_slide);
+                                        echo $headerslider->get_subheadline($header_slide);
                                         echo $headerslider->get_button($header_slide);
                                         ?>
                                     </div>

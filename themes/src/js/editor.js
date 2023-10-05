@@ -57,7 +57,10 @@ wp.domReady(() => {
         label: 'Section',
     });
 
-
+    wp.blocks.registerBlockStyle('core/columns', {
+        name: 'overlap-content',
+        label: 'Overlap Content',
+    });
 
     //wp.blocks.unregisterBlockType('core/media-text');
 
