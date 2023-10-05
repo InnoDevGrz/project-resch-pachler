@@ -44,6 +44,28 @@
                     "media_upload": 0,
                     "delay": 0,
                     "parent_repeater": "field_651e6daed9672"
+                },
+                {
+                    "key": "field_651e7781d5eea",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "parent_repeater": "field_651e6daed9672"
                 }
             ]
         }
@@ -66,5 +88,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696494529
+    "modified": 1696501808
 }
