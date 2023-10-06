@@ -6,6 +6,7 @@
       // nur ausschalten, wenn ein Menü Logo
       //display: none;
     }
+
     img,
     svg {
       width: auto;
@@ -16,7 +17,6 @@
         height: $nav-height-desktop - 30px !important;
       }
     }
-
   }
 }
 

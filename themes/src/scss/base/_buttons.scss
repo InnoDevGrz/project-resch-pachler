@@ -4,32 +4,30 @@
 */
 
 @mixin button($background-color, $color, $border-color) {
-    //white-space: nowrap;
-    display: inline-block !important;
-    text-decoration: none !important;
-    text-align: center !important;
-    cursor: pointer !important;
-    border-radius: 4px !important;
-    position: relative !important;
-    padding: .8em 1em !important;
-    line-height: 1 !important;
-    margin-bottom: 1.1em !important;
-    margin-top: 1em !important;
-    color: $color !important;
-    background: $background-color !important;
-    border: 1px solid $border-color !important;
-    overflow: hidden !important;
-    transition: all 0.3s linear !important;
-    font-family: $base-font-family !important;
-    font-weight: $base-font-weight !important;
-    &:hover {
-        color: $background-color !important;
-        background-color: $color !important;
+    border-radius: 100% !important;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 1.1em;
+    margin-top: 1em;
+    color: $color;
+    background: $background-color !important;;
+    border: 1px solid $border-color !important;;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    font-family: $base-font-family !important;;
+    font-weight: 700 !important;;
+    padding: 1.5rem 3rem  !important;
+    &:hover,
+    &:active{
+        color: $color !important;
+        opacity: 0.8;
+
     }
-    &:active {
-        color: $background-color !important;
-        background-color: $color !important;
-    }
+
 }
 
 
@@ -38,24 +36,23 @@
 
 // header-btn s. header-slider.scss
 .btn,
-.ff-btn,
-button,
+
 input[type="submit"],
 .sib-default-btn,
 button[type="submit"],
-.wp-block-button .wp-block-button__link {
-    @include button(#ffffff, $secondary, #ebebeb);
+.wp-block-button .wp-block-button__link,
+.is-style-btn-secondary .wp-block-button__link,
+.btn-secondary {
+    @include button($secondary,#ffffff, $secondary);
 }
 
 .is-style-btn-primary .wp-block-button__link,
 .btn-primary {
-    @include button(#ffffff, $primary, #ebebeb);
+    @include button($primary, #ffffff, $primary);
 }
 
-.is-style-btn-secondary .wp-block-button__link,
-.btn-secondary {
-    @include button(#ffffff, $secondary, #ebebeb);
-}
+.ff-btn{
 
+}
 
 

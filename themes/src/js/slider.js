@@ -9,7 +9,7 @@ for (let i = 0; i < el.length; i++) {
         autoplay: true,
         interval: 7000,
         arrows: false,
-        pagination: true
+        pagination: false
     }).mount();
 }
 

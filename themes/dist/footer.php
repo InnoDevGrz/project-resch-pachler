@@ -2,7 +2,6 @@
     <div class="wrapper">
         <?php include(locate_template('template-parts/footer/contact-infos.php')); ?>
         <?php include(locate_template('template-parts/footer/navigation.php')); ?>
-        <?php include(locate_template('template-parts/footer/footer-brands.php')); ?>
     </div>
 
     <div class="site-info">

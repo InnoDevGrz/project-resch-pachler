@@ -36,18 +36,23 @@ if (!empty($block['align'])) $class_name .= ' align' . $block['align'];
         ?>
 
         <?php if ($teasers): ?>
-        <div class="hs-teaser">
-            <?php foreach ($teasers as $teaser): ?>
-                <a class="hs-teaser-item" href="<?= $teaser['link']; ?>"><?= $teaser['teaser_content']; ?></a>
-            <?php endforeach; ?>
-        </div>
-            <?php endif; ?>
+            <div class="hs-teaser">
+                <?php foreach ($teasers as $teaser): ?>
+                    <a class="hs-teaser-item" href="<?= $teaser['link']; ?>">
+                        <h3><?= $teaser['title']; ?></h3>
+                        <figure class="hs-teaser-image"> <?php echo wp_get_attachment_image($teaser['image'], 'teaser_image') ?></figure>
+                        <p><?= $teaser['content']; ?></p>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
 
-            <?php
-            wp_enqueue_style('slider-css');
-            wp_enqueue_script('slider-js');
-            ?>
+        <?php
+        wp_enqueue_style('slider-css');
+        wp_enqueue_script('slider-js');
+        ?>
     </header>
 <?php if (is_admin()) : ?>
-    <h3 class="empty-block"><?php esc_attr_e('Headerslider-Block bearbeiten &raquo;', 'ize'); ?></h3>
+    <h3 class="empty-block empty-header-slider-block"><?php esc_attr_e('Headerslider-Block bearbeiten &raquo;', 'ize'); ?></h3>
+
 <?php endif;

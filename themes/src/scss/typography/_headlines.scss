@@ -7,8 +7,8 @@ h1, h2, h3, h4, h5 {
   margin-bottom: .3em;
   position: relative;
 }
-$headline-font-size-mobile: .5em;
-$headline-font-size-desktop: $headline-font-size-mobile * 2;
+$headline-font-size-mobile: calc($base-font-size-mobile * 0.7);
+$headline-font-size-desktop: calc($headline-font-size-mobile * 1.5);
 
 h1 {
   font-size: $headline-font-size-mobile * 5;
@@ -39,11 +39,11 @@ h5 {
   }
 
   h2:not(.post-title) {
-    font-size: $base-font-size-desktop * 3.5;
+    font-size: $base-font-size-desktop * 3;
   }
 
   h3 {
-    font-size: $base-font-size-desktop * 2.5;
+    font-size: $base-font-size-desktop * 2;
   }
 
   h4:not(.post-title) {

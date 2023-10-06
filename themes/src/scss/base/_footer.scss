@@ -129,7 +129,9 @@
   }
 
 
-  h3,
+  h3{
+    color: $headline-color;
+  }
   p {
     color: $footer-color;
   }
@@ -161,7 +163,6 @@
     margin-top: 2em;
     padding: 1em 5%;
     background-color: $footer-bg-color;
-    color: $footer-color;
     text-align: center;
     display: flex;
     align-items: center;
@@ -173,7 +174,8 @@
     @media (min-width: $sm) {
       flex-direction: column;
       justify-content: space-evenly;
-      max-width: 50%;
+      background-color: $secondary;
+      color: #fff;
       border-top: 1px solid $lighted;
       margin: 2em auto 0;
     }

@@ -77,9 +77,6 @@
           padding: 3.7em;
         }
 
-        > * {
-          text-align: center;
-        }
 
         .title {
           color: #fff;
@@ -136,7 +133,6 @@
           @include button(transparent, #ffffff, #ffffff) ;
           align-self: center;
           z-index: 10;
-          padding: .6em 1em !important;
 
           @media screen and (min-width: $sm) {
             align-self: unset;
@@ -167,11 +163,11 @@
     gap: 2rem;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     @media screen and (min-width: $sm) {
-      position: absolute;
+      transform: translateY(-12.5vh);
       flex-direction: row;
       gap: 3rem;
-      top: 90%;
       left: 0;
       right: 0;
       width: 100%;

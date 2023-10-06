@@ -14,10 +14,7 @@ include(locate_template('template-parts/footer/social-links.php'));
     <h3 class="footer-title"><?php _e('Kontakt', 'ize'); ?></h3>
     <?php echo $infotext->get_contactInfos(); ?>
 </div>
-<div class="locations">
-    <h3 class="footer-title"><?php _e('Standorte', 'ize'); ?></h3>
-    <?php echo $infotext->get_locations(); ?>
-</div>
+
 <div class="infotext">
     <?php
     echo $infotext->get_contactInfoTitle('<h3 class="footer-title">', '</h3>');
