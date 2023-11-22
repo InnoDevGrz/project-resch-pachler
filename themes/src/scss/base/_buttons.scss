@@ -4,7 +4,7 @@
 */
 
 @mixin button($background-color, $color, $border-color) {
-    border-radius: 100% !important;
+    border-radius: 10px !important;
     display: inline-block;
     text-decoration: none;
     text-align: center;

@@ -164,7 +164,7 @@
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    @media screen and (min-width: $sm) {
+    @media screen and (min-width: $md) {
       transform: translateY(-12.5vh);
       flex-direction: row;
       gap: 3rem;
@@ -183,11 +183,13 @@
       background-color: #fff;
       padding: 1rem;
       transition: all 0.4s ease-in-out;
+      display: inline-block;
 
-      @media screen and (min-width: $sm) {
-        padding: 1.5rem;
+      @media screen and (min-width: $md) {
         position: relative;
         flex: 1;
+        padding: 1.25rem;
+
         &:after {
           content: "";
           position: absolute;
@@ -199,9 +201,9 @@
           right: 0;
           transition: all 0.4s ease-in-out;
         }
+
+
       }
-
-
 
       &:hover {
         box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.08);
@@ -216,10 +218,12 @@
 
       h2, h3 {
         font-size: $headline-font-size-desktop * 1.25 !important;
+        margin-top: 0;
       }
 
       a, p {
         color: $base-color !important;
+        margin-bottom: 0;
       }
 
 
