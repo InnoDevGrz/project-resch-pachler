@@ -4,12 +4,16 @@
   background-color: $subnav-mobile-bg-color;
   padding-left: 0;
   @media (min-width: $breakpoint-nav) {
-    display: flex;
+   /* display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem 0;
+
     max-width: 100vw;
     margin: 0 auto;
     flex-direction: row;
     position: fixed;
-    justify-content: space-evenly;
     padding: 2rem;
     left: 0;
     right: 0;
@@ -30,7 +34,8 @@
       transform: none;
       height: auto;
       background-color: $subnav-desktop-bg-color;
-
+      //width: 100px;
+      overflow: hidden;
 
     }
 
@@ -47,6 +52,7 @@
     font-size: $mobile-subnav-font-size;
     @media screen and (min-width: $breakpoint-nav) {
       font-size: $desktop-subnav-font-size;
+      text-align: center;
     }
 
     color: $subnav-mobile-color;
