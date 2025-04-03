@@ -3,4 +3,5 @@
 <div id="sidebar-menu">
     <?= $sidebar_menu->get_emailIcon(); ?>
     <?= $sidebar_menu->get_phoneIcon(); ?>
+    <?php // $sidebar_menu->get_mobileIcon(); ?>
 </div>

@@ -12,6 +12,7 @@ class tsc__ContactInfos
     protected $country = "";
     protected $email = "";
     protected $phone = "";
+    protected $mobile = "";
     protected $form_shortcode = "";
     protected $google_maps_code = "";
 
@@ -36,6 +37,7 @@ class tsc__ContactInfos
         $this->country = $data['country'];
         $this->email = $data['email'];
         $this->phone = $data['phone'];
+        $this->mobile = $data['mobile'];
         $this->form_shortcode = $data['form_shortcode'];
         $this->google_maps_code = $data['google_maps_code'];
 
@@ -53,6 +55,11 @@ class tsc__ContactInfos
     {
         return $this->phone;
     }
+    public function get_mobile()
+    {
+        return $this->mobile;
+    }
+
 
     public function get_email()
     {
@@ -65,6 +72,14 @@ class tsc__ContactInfos
             ;
             $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->phone);
             return '<a href="' . $url . '">' . $this->phone . '</a>';
+        endif;
+    }
+    public function get_mobileLink()
+    {
+        if (!empty($this->mobile)):
+            ;
+            $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->mobile);
+            return '<a href="' . $url . '">' . $this->mobile . '</a>';
         endif;
     }
 
@@ -94,6 +109,15 @@ class tsc__ContactInfos
         endif;
 
     }
+    public function get_mobileIcon()
+    {
+        if (!empty($this->mobile)):
+            $icon = '<i class="tsc-icon flaticon-telephone-call" aria-hidden="true"></i>';
+            $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->mobile);
+            return '<a aria-label="' . esc_attr__('Call now', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
+        endif;
+
+    }
 
     public function get_contactIcons()
     {
@@ -101,6 +125,7 @@ class tsc__ContactInfos
         $view = "<div class='tsc-contact-icons'>";
         $view .= $this->get_emailIcon();
         $view .= $this->get_phoneIcon();
+        $view .= $this->get_mobileIcon();
         $view .= "</div>";
 
         return $view;
@@ -171,6 +196,7 @@ class tsc__ContactInfos
 
             $html .= '<p>';
             $html .= '<span style="display: block">' . $this->get_phoneLink() . '</span>';
+            $html .= '<span style="display: block">' . $this->get_mobileLink() . '</span>';
             $html .= '<span style="display: block">' . $this->get_emailLink() . '</span>';
             $html .= '</p>';
             $html .= "</div>"; // end div tsc-contact-infos
