@@ -10,6 +10,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="live">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/wp-content/themes/resch-pachler" local="$PROJECT_DIR$/themes/dist" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>

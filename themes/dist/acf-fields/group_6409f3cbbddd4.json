@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6409f42bd21de",
@@ -195,6 +196,27 @@
                     "append": ""
                 },
                 {
+                    "key": "field_67eecbcf01568",
+                    "label": "Mobilnummer",
+                    "name": "mobile",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_640aec3ad6f81",
                     "label": "UID-Nummer",
                     "name": "uid",
@@ -311,7 +333,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6409f5321ae11",
@@ -386,7 +409,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6409f5a2a02ad",
@@ -481,7 +505,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_640a3f633ddbe",
@@ -948,7 +973,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_640af42de0ba8",
@@ -1137,5 +1163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688458271
+    "modified": 1744040812
 }
