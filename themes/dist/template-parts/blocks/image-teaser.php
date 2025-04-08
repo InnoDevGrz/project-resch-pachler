@@ -19,12 +19,12 @@ $class_name .= ' col-' . $imageTeaser->getImageTeaserColumns();
                 <a class="image-teaser-link" href="<?php echo $teaser['link'] ?>">
 
 
-	                <?php echo '<h3 class="image-teaser-title">' . $teaser['title'] . '</h3>'; ?>
+	                <?php echo '<p class="image-teaser-title">' . $teaser['title'] . '</p>'; ?>
 
                       <?php  echo wp_get_attachment_image($teaser['image'], 'large'); ?>
 
                     <div class="image-teaser-description">
-	                    <?php echo '<h3>' . $teaser['title'] . '</h3>'; ?>
+	                    <?php echo '<p class="image-teaser-subtitle">' . $teaser['title'] . '</p>'; ?>
                         <?php echo  $teaser['content']; ?>
                     </div>
                 </a>

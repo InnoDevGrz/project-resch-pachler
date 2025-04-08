@@ -6,10 +6,12 @@ h1, h2, h3, h4, h5 {
   margin-top: 1em;
   margin-bottom: .3em;
   position: relative;
-  strong, b{
+
+  strong, b {
     font-weight: 900;
   }
 }
+
 $headline-font-size-mobile: calc($base-font-size-mobile * 0.7);
 $headline-font-size-desktop: calc($headline-font-size-mobile * 1.5);
 
@@ -32,7 +34,6 @@ h4:not(.post-title) {
 h5 {
   font-size: $headline-font-size-mobile * 1.2;
 }
-
 
 
 @media screen and (min-width: $sm) {
@@ -58,12 +59,28 @@ h5 {
   }
 
 }
+
 .page-template-impressum,
-.page-template-privacypolicy{
-  h1{
+.page-template-privacypolicy {
+  h1 {
     font-size: 2.2rem !important;
   }
-  h2, h3{
+
+  h2, h3 {
     font-size: 1.7rem !important;
   }
+}
+
+.image-teaser-item .image-teaser-title,
+.image-teaser-item .image-teaser-subtitle{
+  font-weight: 900;
+  font-family: $headline-font-family !important;
+
+  font-size: $headline-font-size-mobile * 2.5!important;
+  @media (min-width: $sm) {
+    font-size: $base-font-size-desktop * 2!important;
+    font-family: $headline-font-family !important;
+
+  }
+
 }
